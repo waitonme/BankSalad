@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* banksaladTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* banksaladTests.m */; };
 		047CA66BBBCF43ECA01169B1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F5EE7637804049BA9B01FD /* SimpleLineIcons.ttf */; };
+		057D436F2325FD0400A93B9A /* A.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* A.xib */; };
+		057D43752326011500A93B9A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 057D43742326011500A93B9A /* icon.png */; };
+		059E8ADA2324E2FB004500E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059E8AD92324E2FB004500E9 /* Images.xcassets */; };
 		08E1209D447044ADAAF12956 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2F612DE86C648E790AFE206 /* Entypo.ttf */; };
 		1361F00CBA3349F096E88778 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2DC4B68CE6C472581B4DA24 /* Foundation.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FBD1A68108700A75B9A /* A.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* A.xib */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		21EB9BB457B84A2FA4ACD24D /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24683A49632140A8947D9293 /* AntDesign.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* banksaladTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* banksaladTests.m */; };
 		3C38B3B672894E1BB98777DD /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EF6DBB9D2DB427086E6C136 /* MaterialCommunityIcons.ttf */; };
@@ -61,13 +62,14 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* banksaladTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = banksaladTests.m; sourceTree = "<group>"; };
 		0274CD8F905E3DAFC3D4F58A /* Pods-banksalad-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-banksalad-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-banksalad-tvOS/Pods-banksalad-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		057D43742326011500A93B9A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		059E8AD92324E2FB004500E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 		08941282AF4C6C5F6D6CB90C /* libPods-banksalad-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-banksalad-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7C8A2203AD70FCBF188F44 /* libPods-banksaladTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-banksaladTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* banksalad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banksalad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = banksalad/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = banksalad/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = banksalad/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/A.xib; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = banksalad/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = banksalad/main.m; sourceTree = "<group>"; };
 		18F5EE7637804049BA9B01FD /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
@@ -160,9 +162,10 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				059E8AD92324E2FB004500E9 /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB11A68108700A75B9A /* A.xib */,
+				057D43742326011500A93B9A /* icon.png */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = banksalad;
@@ -350,6 +353,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 2AW64MLSB4;
+						LastSwiftMigration = 1030;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -389,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057D436F2325FD0400A93B9A /* A.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				13B07FBD1A68108700A75B9A /* A.xib in Resources */,
 				21EB9BB457B84A2FA4ACD24D /* AntDesign.ttf in Resources */,
 				08E1209D447044ADAAF12956 /* Entypo.ttf in Resources */,
 				905181BB7B8843E2B84AE362 /* EvilIcons.ttf in Resources */,
@@ -405,6 +409,7 @@
 				6FBF2F66E46F46538B196C9E /* FontAwesome.ttf in Resources */,
 				958DDE96B8E94D32AAEFAAF2 /* FontAwesome5_Brands.ttf in Resources */,
 				97485DF2A0D7402B9AD83BB6 /* FontAwesome5_Regular.ttf in Resources */,
+				057D43752326011500A93B9A /* icon.png in Resources */,
 				BC18D1431F7A487DA9C6E511 /* FontAwesome5_Solid.ttf in Resources */,
 				AFF907C54868404889D36E18 /* Fontisto.ttf in Resources */,
 				1361F00CBA3349F096E88778 /* Foundation.ttf in Resources */,
@@ -412,6 +417,7 @@
 				3C38B3B672894E1BB98777DD /* MaterialCommunityIcons.ttf in Resources */,
 				DCC3AD57EB164A59B20C6E45 /* MaterialIcons.ttf in Resources */,
 				BD6243FFCA8E4337B2BE742D /* Octicons.ttf in Resources */,
+				059E8ADA2324E2FB004500E9 /* Images.xcassets in Resources */,
 				047CA66BBBCF43ECA01169B1 /* SimpleLineIcons.ttf in Resources */,
 				7DF63A34EE7B4ED190EB6F5F /* Zocial.ttf in Resources */,
 			);
@@ -421,7 +427,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,12 +647,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+		13B07FB11A68108700A75B9A /* A.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				13B07FB21A68108700A75B9A /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = A.xib;
 			path = banksalad;
 			sourceTree = "<group>";
 		};
@@ -704,6 +709,7 @@
 			baseConfigurationReference = 3389BB57113E35295CDF85B3 /* Pods-banksalad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 2AW64MLSB4;
@@ -716,6 +722,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = banksalad;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -725,6 +733,7 @@
 			baseConfigurationReference = 33C1F7BEC97088E19EC059CB /* Pods-banksalad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AW64MLSB4;
 				INFOPLIST_FILE = banksalad/Info.plist;
@@ -736,6 +745,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = banksalad;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
