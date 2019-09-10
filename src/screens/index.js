@@ -14,6 +14,8 @@ import SplashScreen from './SplashScreen '
 
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import AuthScreen from './AuthScreen';
+import Passwordscreen from './PasswordScreen';
 
 
 
@@ -77,11 +79,11 @@ const TabNavigator = createBottomTabNavigator(
 
 export default createAppContainer(createSwitchNavigator({
     SplashScreen: SplashScreen,
+    Auth : AuthScreen,
+    Password: Passwordscreen,
     TabNavigator: TabNavigator
 },
     {
         initialRouteName: "SplashScreen"
-   
     }));
 
-// export default createAppContainer(TabNavigator);

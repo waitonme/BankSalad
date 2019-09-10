@@ -841,6 +841,11 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@react-native-community/async-storage@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.6.1.tgz#19be07fc1d65c77bdeb20f46108ba12076aad1c5"
+  integrity sha512-1WA28xfdhG+unkTEk/lXnqI2izv6belo0CYw7UdvaeHm8TIYT6eTmIIdGR7oiCa2xSKEnaPQqRMH6h7gyLNbww==
+
 "@react-native-community/cli-platform-android@^2.6.0", "@react-native-community/cli-platform-android@^2.9.0":
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-2.9.0.tgz#28831e61ce565a2c7d1905852fce1eecfd33cb5e"
@@ -5265,6 +5270,13 @@ react-native-gesture-handler@^1.4.1:
     hammerjs "^2.0.8"
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.4"
+    prop-types "^15.7.2"
+
+react-native-pin-view@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-pin-view/-/react-native-pin-view-2.4.0.tgz#e62340fb4977ecaf1848548cf492919f2a81074d"
+  integrity sha512-dq1XhVKkeh8ajTxRL8Sm5cfuh5UrHHMdQ2wxG7MfDKxvZjPX4lTrhUIZzoWXV8+XmD1pbas1ebHFJ8vAmeFOnA==
+  dependencies:
     prop-types "^15.7.2"
 
 react-native-reanimated@^1.2.0:

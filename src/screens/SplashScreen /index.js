@@ -1,30 +1,49 @@
 import React, { Component } from 'react';
 import {
     View,
-    Text,
-    Image,
     Animated,
     StyleSheet
 } from 'react-native';
 
+import AsyncStorage from '@react-native-community/async-storage';
 
 class SplashScreen extends Component {
 
     constructor() {
+        //to-dos
+        /*
+            if has no userId info (need to sign-in)
+                navigate -> Auth
+            else (has userId info)
+                navigate -> Password
+
+            we need to check out user has a id, here
+        */
         super();
-        setTimeout(() =>
-            this.props.navigation.navigate('TabNavigator'), 2500)
+
         this.spinValue = new Animated.Value(0);
     }
 
 
     componentDidMount() {
         this._rotate90();
+        this._bootstrapAsync();
     }
 
 
+    _bootstrapAsync = async () => {
+        try {
+            const userToken = await AsyncStorage.getItem('@user_token')
+            setTimeout(() =>
+                this.props.navigation.navigate(userToken ? 'Password' : 'Auth', { params: { userToken } }), 2500);
+        } catch (e) {
+            console.log(e)
+        }
+    };
+
     _rotate90() {
         this.spinValue.setValue(0)
+
         Animated.timing(
             this.spinValue, {
             toValue: 1,
@@ -54,7 +73,6 @@ class SplashScreen extends Component {
 
         return (
             <View style={styles.main} >
-
                 <Animated.Image
                     style={this._getStyle()}
                     source={require('../../../img/Icon.png')} />
@@ -70,31 +88,4 @@ const styles = StyleSheet.create({
     }
 });
 
-// const style = {
-// .rotate - 90 - cw {
-// 	-webkit - animation: rotate - 90 - cw 0.5s ease -in 0.2s both;
-// animation: rotate - 90 - cw 0.5s ease -in 0.2s both;
-// }
-
-// @-webkit - keyframes rotate - 90 - cw {
-//     0 % {
-//       - webkit - transform: rotate(0);
-//     transform: rotate(0);
-// }
-// 100 % {
-//       - webkit - transform: rotate(90deg);
-// transform: rotate(90deg);
-//     }
-//   }
-// @keyframes rotate - 90 - cw {
-//     0 % {
-//       - webkit - transform: rotate(0);
-//     transform: rotate(0);
-// }
-// 100 % {
-//       - webkit - transform: rotate(90deg);
-// transform: rotate(90deg);
-//     }
-//   }
-// }
 export default SplashScreen;
