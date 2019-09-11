@@ -7,7 +7,10 @@ import {
 import PinView from 'react-native-pin-view';
 
 class Passwordscreen extends Component {
-    default
+    state = {
+        pin: "123456"
+    }
+
 
     render() {
         const name = this.props.navigation.getParam('name', 'no name');
@@ -18,7 +21,14 @@ class Passwordscreen extends Component {
                 <Text style={styles.title}>{userToken ? "비밀번호 인증" : "비밀번호 설정"}</Text>
                 <Text style={styles.subtitle}>{userToken ? "간편암호 입력" : "앱에서 사용할 간편암호를 입력하세요"}</Text>
                 <PinView
-                    onComplete={(val, clear) => { alert(val) }}
+                    onComplete={(val, clear) => {
+                        if (val === this.state.pin) {
+                            this.props.navigation.navigate('TabNavigator', { params: { userToken, phoneNum, name, pin: this.state.pin } });
+                        } else {
+                            clear();
+                            alert('check password')
+                        }
+                    }}
                     pinLength={6}
                     buttonBgColor="rgb(69, 203, 149)"
                     buttonTextColor="white"

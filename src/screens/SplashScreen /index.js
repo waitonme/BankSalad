@@ -61,7 +61,7 @@ class SplashScreen extends Component {
                 {
                     rotate: this.spinValue.interpolate({
                         inputRange: [0, 1],
-                        outputRange: ['0deg', '90deg']
+                        outputRange: ['0deg', '109deg']
                     })
                 },
             ]

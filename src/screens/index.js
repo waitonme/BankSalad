@@ -2,7 +2,6 @@
 import React from 'react';
 
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import DashBoardScreen from './DashBoardScreen/';
@@ -18,18 +17,6 @@ import AuthScreen from './AuthScreen';
 import Passwordscreen from './PasswordScreen';
 
 
-
-// const RootStack = createStackNavigator(
-//     {
-//         HomeScreen : {screen: HomeScreen},
-//     },
-//     {
-//         defaultNavigationOptions: ({ navigation }) => ({
-//             title: navigation.state.index,
-//         }),
-//         initialRouteName: 'HomeScreen'
-//     }
-// );
 
 const TabNavigator = createBottomTabNavigator(
     {
@@ -69,8 +56,10 @@ const TabNavigator = createBottomTabNavigator(
         tabBarOptions: {
             activeTintColor: "#46c3ad",
             inactiveTintColor: "#888",
+            style: { opacity: 0.9 }
 
         },
+        initialRouteName: "더보기"
 
     }
 );
@@ -79,11 +68,11 @@ const TabNavigator = createBottomTabNavigator(
 
 export default createAppContainer(createSwitchNavigator({
     SplashScreen: SplashScreen,
-    Auth : AuthScreen,
+    Auth: AuthScreen,
     Password: Passwordscreen,
     TabNavigator: TabNavigator
 },
     {
-        initialRouteName: "SplashScreen"
+        initialRouteName: "TabNavigator"
     }));
 
