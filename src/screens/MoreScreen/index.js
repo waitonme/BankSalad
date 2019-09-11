@@ -13,6 +13,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Icon from 'react-native-vector-icons/AntDesign'
 
 import PersonalScreen from './PersonalScreen/';
+import PersonalNextScreen from './PersonalScreen/PersonalNextScreen';
 
 class MoreScreen extends Component {
 
@@ -26,7 +27,7 @@ class MoreScreen extends Component {
     }
 
 
-    onPressHandler = ({item}) => {
+    onPressHandler = ({ item }) => {
         switch (item) {
             case '이름':
                 this.props.navigation.push('PersonalScreen');
@@ -99,6 +100,21 @@ const MoreScreenStack = createStackNavigator(
         },
         PersonalScreen: {
             screen: PersonalScreen,
+            navigationOptions: () => ({
+                headerStyle: {
+                    backgroundColor: '#F5F5F5',
+                },
+
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                    color: 'black'
+                },
+                headerTintColor: "#45CA93",
+                title: "개인 설정",
+            })
+        },
+        PersonalNextScreen: {
+            screen: PersonalNextScreen,
             navigationOptions: () => ({
                 headerStyle: {
                     backgroundColor: '#F5F5F5',
