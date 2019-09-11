@@ -12,6 +12,8 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Icon from 'react-native-vector-icons/AntDesign'
 
+import PersonalScreen from './PersonalScreen/';
+
 class MoreScreen extends Component {
 
     buttonStyle = (item) => {
@@ -23,6 +25,17 @@ class MoreScreen extends Component {
         }
     }
 
+
+    onPressHandler = ({item}) => {
+        switch (item) {
+            case '이름':
+                this.props.navigation.push('PersonalScreen');
+                break;
+
+            default:
+                console.log(item)
+        }
+    }
     render() {
 
 
@@ -31,7 +44,7 @@ class MoreScreen extends Component {
                 <SectionList style={styles.section}
                     scrollEnabled={false}
                     renderItem={({ item, index, section }) =>
-                        <TouchableOpacity style={item == '고객센터' ? [styles.button, { borderTopWidth: 1 }] : styles.button} activeOpacity={0.5}>
+                        <TouchableOpacity onPress={() => this.onPressHandler({ item })} style={item == '고객센터' ? [styles.button, { borderTopWidth: 1 }] : styles.button} activeOpacity={0.5}>
                             <View style={{ flexDirection: 'row', alignContent: 'center' }}>
                                 <Text style={this.buttonStyle(item)}>{item}
                                     {index === 0 && item == '이름' ? < Text style={{ color: 'rgb(172,172,172)', fontSize: 14, lineHeight: 25 }}>{"\n"}개인설정, 서비스 설정</Text> : undefined}
@@ -82,6 +95,21 @@ const MoreScreenStack = createStackNavigator(
                 },
 
                 title: "더보기",
+            })
+        },
+        PersonalScreen: {
+            screen: PersonalScreen,
+            navigationOptions: () => ({
+                headerStyle: {
+                    backgroundColor: '#F5F5F5',
+                },
+
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                    color: 'black'
+                },
+                headerTintColor: "#45CA93",
+                title: "개인 설정",
             })
         }
     },
