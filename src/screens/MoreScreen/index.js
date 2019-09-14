@@ -107,7 +107,7 @@ const MoreScreenStack = createStackNavigator(
 
                 headerTitleStyle: {
                     fontWeight: 'bold',
-                    color: 'black'
+                        color: 'black'
                 },
                 headerTintColor: "#45CA93",
                 title: "개인 설정",

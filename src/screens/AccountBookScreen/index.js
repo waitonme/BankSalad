@@ -17,7 +17,7 @@ class AccountBookScreen extends Component {
 
 
 const styles = StyleSheet.create({
-    main: { flex: 1, justifyContent: 'center', alignItems: 'center' }
+    main: { flex: 1, justifyContent: 'center', alignItems: 'center' ,   backgroundColor: 'white'}
 });
 
 export default AccountBookScreen;

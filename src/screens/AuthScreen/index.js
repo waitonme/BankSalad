@@ -12,9 +12,12 @@ import {
 
 
 
+
+
 class AuthScreen extends Component {
 
 
+    
     state = {
         nameBorderColor: 'gray',
         phoneBorderColor: 'gray',
@@ -53,58 +56,61 @@ class AuthScreen extends Component {
 
     render() {
         return (
-            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-                <View style={styles.main}  >
-                    <Text style={{ width: "100%", textAlign: 'left', fontSize: 20, color: this.state.color }}>{this.state.message}</Text>
-                    <TextInput
-                        value={this.state.name}
-                        style={[styles.name, { borderBottomColor: this.state.nameBorderColor }]}
-                        onFocus={() => this.setState({ nameBorderColor: '#45CA93' })}
-                        onBlur={() => this.setState({ nameBorderColor: 'gray' })}
-                        onChangeText={(text) => this.setState({ name: text.trim() })}
-                        placeholder="이름"
-                        textContentType="name"
-                        autoFocus={true}
-                        returnKeyType={"next"}
-                        ref={(input) => { this.firstTextInput = input; }}
-                        onSubmitEditing={() => { this.secondTextInput.focus(); }}
-                        blurOnSubmit={false}
-                    />
-                    <TextInput
-                        value={this.state.phoneNum}
-                        style={[styles.name, { borderBottomColor: this.state.phoneBorderColor }]}
-                        onFocus={() => this.setState({ phoneBorderColor: '#45CA93' })}
-                        onBlur={() => this.setState({ phoneBorderColor: 'gray' })}
-                        onChangeText={(text) => { const cleanNumber = text.replace(/[^0-9]/g, ""); this.setState({ phoneNum: cleanNumber.trim() }); }}
-                        placeholder="전화번호"
-                        textContentType="telephoneNumber"
-                        ref={(input) => { this.secondTextInput = input; }}
-                        onSubmitEditing={() => { this.onSubmit() }}
-                        returnKeyType={"done"}
-                        keyboardType='numeric'
-                    />
 
-                    <TouchableOpacity style={styles.button}
-                        onPress={() => this.onSubmit()}>
-                        <Text style={styles.bottonText}>다음</Text>
-                    </TouchableOpacity>
+                // <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                    <View  style={styles.main} >
+                        <Text style={{ width: "100%", textAlign: 'left', fontSize: 20, color: this.state.color }}>{this.state.message}</Text>
+                        <TextInput
+                            value={this.state.name}
+                            style={[styles.name, { borderBottomColor: this.state.nameBorderColor }]}
+                            onFocus={() => this.setState({ nameBorderColor: '#45CA93' })}
+                            onBlur={() => this.setState({ nameBorderColor: 'gray' })}
+                            onChangeText={(text) => this.setState({ name: text.trim() })}
+                            placeholder="이름"
+                            textContentType="name"
+                            autoFocus={true}
+                            returnKeyType={"next"}
+                            ref={(input) => { this.firstTextInput = input; }}
+                            onSubmitEditing={() => { this.secondTextInput.focus(); }}
+                            blurOnSubmit={false}
+                        />
+                        <TextInput
+                            value={this.state.phoneNum}
+                            style={[styles.name, { borderBottomColor: this.state.phoneBorderColor }]}
+                            onFocus={() => this.setState({ phoneBorderColor: '#45CA93' })}
+                            onBlur={() => this.setState({ phoneBorderColor: 'gray' })}
+                            onChangeText={(text) => { const cleanNumber = text.replace(/[^0-9]/g, ""); this.setState({ phoneNum: cleanNumber.trim() }); }}
+                            placeholder="전화번호"
+                            textContentType="telephoneNumber"
+                            ref={(input) => { this.secondTextInput = input; }}
+                            onSubmitEditing={() => { this.onSubmit() }}
+                            returnKeyType={"done"}
+                            keyboardType='numeric'
+                        />
 
-                </View >
-            </TouchableWithoutFeedback>
+                        <TouchableOpacity style={styles.button}
+                            onPress={() => this.onSubmit()}>
+                            <Text style={styles.bottonText}>다음</Text>
+                        </TouchableOpacity>
+
+                    </View >
+                // </TouchableWithoutFeedback>
+
         )
     }
 }
 
 
 const styles = StyleSheet.create({
-    main: { flex: 1, alignItems: 'center', paddingTop: "20%", paddingLeft: "10%", paddingRight: "10%", justifyContent: 'center' },
+    main: { flex: 1, alignItems: 'center', paddingTop: "20%", paddingLeft: "10%", paddingRight: "10%", justifyContent: 'center', backgroundColor: 'white' },
     name: {
         marginTop: "10%",
-        borderBottomWidth: 1,
+        borderBottomWidth: 2,
         width: "100%",
         fontSize: 25,
         paddingLeft: 4,
-        paddingRight: 3
+        paddingRight: 3,
+
     },
     button: {
         justifyContent: 'center',

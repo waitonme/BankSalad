@@ -57,9 +57,8 @@ const TabNavigator = createBottomTabNavigator(
             activeTintColor: "#46c3ad",
             inactiveTintColor: "#888",
             style: { opacity: 0.9 }
-
         },
-        initialRouteName: "더보기"
+        initialRouteName: "My금융"
 
     }
 );
@@ -70,9 +69,15 @@ export default createAppContainer(createSwitchNavigator({
     SplashScreen: SplashScreen,
     Auth: AuthScreen,
     Password: Passwordscreen,
-    TabNavigator: TabNavigator
+    TabNavigator: {
+        screen: TabNavigator,
+        navigationOptions: () => ({
+
+
+        })
+    }
 },
     {
-        initialRouteName: "TabNavigator"
+        initialRouteName: "SplashScreen"
     }));
 

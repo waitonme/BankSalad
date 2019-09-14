@@ -12,6 +12,7 @@
     "@types/jest": "^24.0.18",
     "react": "16.8.6",
     "react-native": "0.60.5",
+    "react-native-background-color": "^0.0.6",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-pin-view": "^2.4.0",
     "react-native-reanimated": "^1.2.0",

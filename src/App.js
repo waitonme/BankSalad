@@ -6,13 +6,21 @@
  * @flow
  */
 
-import React from 'react';
+import React, { Component } from 'react';
+import { View, Text } from 'react-native'
 import AppStack from './screens'
+import BackgroundColor from 'react-native-background-color';
 
-const App = () => {
-  return (
-    <AppStack />
-  );
+class App extends Component {
+  componentDidMount() {
+    BackgroundColor.setColor('#FFFFFF');
+  }
+
+  render() {
+    return (
+      <AppStack />
+    );
+  }
 };
 
 export default App;
